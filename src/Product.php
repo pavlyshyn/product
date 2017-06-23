@@ -24,9 +24,6 @@ class Product extends Model {
         'amount',
         'discount',
         'code',
-        'meta_title',
-        'meta_description',
-        'meta_keywords',
         'is_publish'
     ];
 }
