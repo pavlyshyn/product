@@ -4,9 +4,8 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
+class Products extends Migration {
 
-class MigrationLaravelProductModule extends Migration {
-    
     /**
      * Run the migrations.
      *
@@ -17,6 +16,7 @@ class MigrationLaravelProductModule extends Migration {
             $table->increments('id');
             $table->string('name');
             $table->string('description')->nullable();
+            $table->decimal('purchase', 5, 2)->nullable();
             $table->decimal('amount', 5, 2)->nullable();
             $table->decimal('discount', 5, 2)->nullable();
             $table->string('code')->nullable();
@@ -24,7 +24,7 @@ class MigrationLaravelProductModule extends Migration {
             $table->timestamps();
         });
     }
-    
+
     /**
      * Reverse the migrations.
      *
@@ -33,4 +33,5 @@ class MigrationLaravelProductModule extends Migration {
     public function down() {
         Schema::drop('products');
     }
+
 }

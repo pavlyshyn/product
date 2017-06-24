@@ -7,7 +7,7 @@
         {
             "name": "Roman Pavlyshyn",
             "email": "roman@pavlyshyn.com",
-            "homepage": "http://pavlyshyn.com",
+            "homepage": "http://pavlyshyn.com"
         }
     ],
     "minimum-stability": "dev",
