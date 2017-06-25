@@ -3,7 +3,7 @@
 namespace Pavlyshyn\Product\Controllers;
 
 use Illuminate\Http\Request;
-use Infrastructure\Http\Controller;
+use Optimus\Bruno\Controller;
 use Pavlyshyn\Product\Requests\CreateProductRequest;
 use Pavlyshyn\Product\Services\ProductService;
 

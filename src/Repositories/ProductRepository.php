@@ -3,7 +3,7 @@
 namespace Pavlyshyn\Product\Repositories;
 
 use Pavlyshyn\Product\Model\Product;
-use Infrastructure\Database\Eloquent\Repository;
+use Optimus\Genie\Repository;
 
 class ProductRepository extends Repository {
 

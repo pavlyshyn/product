@@ -2,7 +2,7 @@
 
 namespace Pavlyshyn\Product\Events;
 
-use Infrastructure\Events\Event;
+use Pavlyshyn\Product\Events\Event;
 use Pavlyshyn\Product\Model\Product;
 
 class ProductWasUpdated extends Event {
