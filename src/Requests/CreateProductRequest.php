@@ -2,7 +2,7 @@
 
 namespace Pavlyshyn\Product\Requests;
 
-use Infrastructure\Http\ApiRequest;
+use Pavlyshyn\Product\Requests\ApiRequest;
 
 class CreateProductRequest extends ApiRequest {
 
