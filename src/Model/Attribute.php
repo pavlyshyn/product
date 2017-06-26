@@ -26,11 +26,16 @@ class Attribute extends Model {
      * @var array
      */
     protected $fillable = [
-        'name'
+        'name',
+        'category_id',
     ];
 
     public function products() {
         return $this->belongsToMany(\Pavlyshyn\Product\Model\Product::class);
+    }
+
+    public function category() {
+        return $this->belongsTo(\Pavlyshyn\Product\Model\Category::class);
     }
 
 }

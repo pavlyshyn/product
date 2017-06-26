@@ -32,4 +32,9 @@ class Category extends Model {
     public function products() {
         return $this->belongsToMany(\Pavlyshyn\Product\Model\Product::class);
     }
+
+    public function attributes() {
+        return $this->belongsToMany(\Pavlyshyn\Product\Model\Attribute::class);
+    }
+
 }

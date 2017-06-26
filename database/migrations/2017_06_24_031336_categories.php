@@ -17,6 +17,9 @@ class Categories extends Migration {
             $table->string('name');
             $table->boolean('is_publish')->default(0);
             $table->timestamps();
+            
+            $table->index(['name']);
+            $table->index(['is_publish']);
         });
     }
 

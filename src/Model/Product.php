@@ -40,7 +40,7 @@ class Product extends Model {
     }
 
     public function attributes() {
-        return $this->belongsToMany(\Pavlyshyn\Product\Model\Attribute::class);
+        return $this->belongsToMany(\Pavlyshyn\Product\Model\AttributeValue::class);
     }
 
 }

@@ -14,9 +14,13 @@ class Attributes extends Migration {
     public function up() {
         Schema::create('attributes', function(Blueprint $table) {
             $table->increments('id');
+            $table->integer('category_id');
             $table->string('name');
             $table->boolean('is_publish')->default(0);
             $table->timestamps();
+            
+            $table->index(['category_id']);
+            $table->index(['name']);
         });
     }
 
