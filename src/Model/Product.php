@@ -43,4 +43,8 @@ class Product extends Model {
         return $this->belongsToMany(\Pavlyshyn\Product\Model\Attribute::class);
     }
 
+    public function media() {
+        return $this->belongsToMany(\Pavlyshyn\Product\Model\Media::class);
+    }
+
 }
